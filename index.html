@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranjith Ice Company | Order Online</title>
+<style>
+:root{--blue:#073b70;--sky:#1296d4;--ice:#eefaff;--green:#25d366;--gold:#ffb703;--red:#dc3545}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#f7fbfe;color:#1f2937}
+header{position:sticky;top:0;z-index:99;background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;padding:13px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px;box-shadow:0 3px 15px #0003}
+.logo{font-size:23px;font-weight:800}.nav{display:flex;gap:17px}.nav a{color:#fff;text-decoration:none;font-weight:bold}.lang{display:flex;background:#ffffff22;border-radius:24px;padding:3px}.lang button{border:0;background:transparent;color:#fff;padding:8px 12px;border-radius:20px;font-weight:bold;cursor:pointer}.lang button.active{background:#fff;color:var(--blue)}
+.hero{padding:80px 20px;text-align:center;color:#fff;background:linear-gradient(135deg,var(--blue),var(--sky))}.hero h1{font-size:clamp(38px,7vw,66px);margin:0 0 12px}.hero p{font-size:20px}
+section{padding:65px 7%}.products{background:var(--ice)}.title{text-align:center;color:var(--blue);font-size:34px;margin:0 0 10px}.sub{text-align:center;color:#64748b;margin:0 0 35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:22px}.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #0002;transition:.2s}.card:hover{transform:translateY(-5px)}.card img{width:100%;height:205px;object-fit:cover;display:block}.info{text-align:center;padding:16px}.info h3{color:var(--blue);margin:0 0 7px;font-size:20px}.size{color:#64748b;min-height:22px}.price{font-size:23px;font-weight:800;color:var(--blue);margin:10px 0}.price.order{font-size:15px;color:#9a6700}
+.add-btn{width:100%;border:0;border-radius:25px;padding:12px;background:var(--green);color:#fff;font-weight:800;font-size:15px;cursor:pointer}
+.order-section{background:#fff}.order-layout{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.box{background:#f8fbfd;border:1px solid #dbeaf2;border-radius:20px;padding:25px}.box h2{margin-top:0;color:var(--blue)}
+.cart-empty{color:#64748b;text-align:center;padding:25px}.cart-item{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #dbe4ea}.cart-item img{width:58px;height:58px;object-fit:cover;border-radius:10px}.cart-name{flex:1;font-weight:bold}.qty{display:flex;align-items:center;gap:7px}.qty button{width:28px;height:28px;border:0;border-radius:50%;background:var(--blue);color:#fff;font-weight:bold;cursor:pointer}.remove{border:0;background:none;color:var(--red);cursor:pointer;font-weight:bold}.total{font-size:22px;font-weight:800;color:var(--blue);padding-top:16px;text-align:right}
+input,textarea{width:100%;padding:13px;margin:0 0 14px;border:1px solid #ccd9e1;border-radius:10px;font-size:16px}textarea{min-height:90px;resize:vertical}.place-btn{width:100%;border:0;border-radius:28px;padding:15px;background:var(--green);color:#fff;font-size:17px;font-weight:800;cursor:pointer}.place-btn:disabled{background:#9ab5a3;cursor:not-allowed}
+.note{font-size:13px;color:#64748b;line-height:1.5}.contact{background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;text-align:center}.contact .title{color:#fff}.contact-box{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}footer{background:#022a50;color:#fff;text-align:center;padding:24px}.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;text-decoration:none;font-size:27px;box-shadow:0 5px 18px #0004}
+@media(max-width:850px){header{justify-content:center}.nav{order:3;width:100%;justify-content:center;flex-wrap:wrap}.order-layout{grid-template-columns:1fr}section{padding:50px 5%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">🧊 Ranjith Ice Company</div>
+<div class="nav">
+<a href="#home" data-en="Home" data-ta="முகப்பு">Home</a>
+<a href="#products" data-en="Products" data-ta="பொருட்கள்">Products</a>
+<a href="#place-order" data-en="Place Order" data-ta="ஆர்டர் செய்யுங்கள்">Place Order</a>
+<a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+</div>
+<div class="lang"><button class="active" onclick="setLang('en')">English</button><button onclick="setLang('ta')">தமிழ்</button></div>
+</header>
+
+<section class="hero" id="home">
+<div><h1>🍦 Ranjith Ice Company</h1>
+<p data-en="Choose Products • Add One by One • Place Your Order" data-ta="பொருட்களை தேர்வு செய்யுங்கள் • ஒவ்வொன்றாக சேருங்கள் • ஆர்டர் செய்யுங்கள்">Choose Products • Add One by One • Place Your Order</p>
+<a href="#products" style="display:inline-block;background:#fff;color:#073b70;text-decoration:none;padding:14px 25px;border-radius:28px;font-weight:bold" data-en="🍦 Start Ordering" data-ta="🍦 ஆர்டர் தொடங்குங்கள்">🍦 Start Ordering</a></div>
+</section>
+
+<section class="products" id="products">
+<h2 class="title" data-en="🍦 Select Products" data-ta="🍦 பொருட்களை தேர்வு செய்யுங்கள்">🍦 Select Products</h2>
+<p class="sub" data-en="Click ADD one by one. Your selected products will appear in the order form below." data-ta="ஒவ்வொரு பொருளையும் ADD செய்யுங்கள். தேர்வு செய்த பொருட்கள் கீழே உள்ள ஆர்டர் பட்டியலில் வரும்.">Click ADD one by one. Your selected products will appear in the order form below.</p>
+<div class="grid" id="productGrid"></div>
+</section>
+
+<section class="order-section" id="place-order">
+<h2 class="title" data-en="📝 Place Your Order" data-ta="📝 உங்கள் ஆர்டரை பதிவு செய்யுங்கள்">📝 Place Your Order</h2>
+<p class="sub" data-en="Review products, enter your details and send the complete order by WhatsApp." data-ta="தேர்வு செய்த பொருட்களை சரிபார்த்து, உங்கள் விவரங்களை பதிவு செய்து முழு ஆர்டரையும் WhatsApp மூலம் அனுப்புங்கள்.">Review products, enter your details and send the complete order by WhatsApp.</p>
+<div class="order-layout">
+<div class="box">
+<h2 data-en="🛒 Your Order" data-ta="🛒 உங்கள் ஆர்டர்">🛒 Your Order</h2>
+<div id="cart"></div>
+<div class="total" id="total">Total: ₹0</div>
+</div>
+<div class="box">
+<h2 data-en="👤 Customer Details" data-ta="👤 வாடிக்கையாளர் விவரங்கள்">👤 Customer Details</h2>
+<form onsubmit="placeOrder();return false;">
+<input id="customerName" required placeholder="Your Name" data-ph-en="Your Name" data-ph-ta="உங்கள் பெயர்">
+<input id="mobile" required type="tel" placeholder="Mobile Number" data-ph-en="Mobile Number" data-ph-ta="மொபைல் எண்">
+<textarea id="address" placeholder="Address / Delivery Location" data-ph-en="Address / Delivery Location" data-ph-ta="முகவரி / டெலிவரி இடம்"></textarea>
+<textarea id="note" placeholder="Additional Message (Optional)" data-ph-en="Additional Message (Optional)" data-ph-ta="கூடுதல் தகவல் (விருப்பம்)"></textarea>
+<button id="placeBtn" class="place-btn" type="submit" data-en="💬 Place Order via WhatsApp" data-ta="💬 WhatsApp மூலம் ஆர்டர் செய்யுங்கள்">💬 Place Order via WhatsApp</button>
+</form>
+<p class="note" data-en="Add at least one product before placing your order. Strawberry Pista price will be confirmed on order." data-ta="ஆர்டர் செய்வதற்கு முன் குறைந்தது ஒரு பொருளையாவது சேர்க்கவும். Strawberry Pista விலை ஆர்டர் செய்யும்போது உறுதி செய்யப்படும்.">Add at least one product before placing your order. Strawberry Pista price will be confirmed on order.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="title" data-en="📞 Contact Us" data-ta="📞 எங்களை தொடர்பு கொள்ளுங்கள்">📞 Contact Us</h2>
+<div class="contact-box"><div>📞 <strong>90802 69421</strong></div><div>📍 B. Adhanur, Sethiyathope</div></div>
+</section>
+<footer>© 2026 Ranjith Ice Company</footer>
+<a class="wa" href="javascript:openWA()">💬</a>
+
+<script>
+const phone="919080269421";
+let lang="en";
+const products=[{"en": "Chocobar", "ta": "சாகோபார்", "size": "45 ml", "price": 20, "img": "01_Chocobar_45ml.jpg"}, {"en": "Chocobar Nuts", "ta": "சாகோபார் நட்ஸ்", "size": "60 ml", "price": 30, "img": "02_Chocobar_Nuts_60ml.jpg"}, {"en": "Cup Ice Cream", "ta": "கப் ஐஸ் கிரீம்", "size": "100 ml", "price": 20, "img": "03_Cup_Ice_Cream_100ml.jpg"}, {"en": "Cup Ice Cream", "ta": "கப் ஐஸ் கிரீம்", "size": "50 ml", "price": 15, "img": "04_Cup_Ice_Cream_50ml.jpg"}, {"en": "Kulfi Sadha", "ta": "குல்ஃபி சாதா", "size": "", "price": 20, "img": "05_Kulfi_Sadha.jpg"}, {"en": "Kulfi Special", "ta": "குல்ஃபி ஸ்பெஷல்", "size": "", "price": 35, "img": "06_Kulfi_Special.jpg"}, {"en": "Pot Ice Cream", "ta": "பாட் ஐஸ் கிரீம்", "size": "100 ml", "price": 50, "img": "07_Pot_Ice_Cream_100ml.jpg"}, {"en": "Cone Ice Cream", "ta": "கோன் ஐஸ் கிரீம்", "size": "100 ml", "price": 40, "img": "08_Cone_Ice_Cream_100ml.jpg"}, {"en": "Cone Ice Cream", "ta": "கோன் ஐஸ் கிரீம்", "size": "50 ml", "price": 30, "img": "09_Cone_Ice_Cream_50ml.jpg"}, {"en": "Strawberry Pista", "ta": "ஸ்ட்ராபெரி பிஸ்தா", "size": "", "price": "On Order", "img": "10_Strawberry_Pista.jpg"}, {"en": "Badam Milk", "ta": "பாதாம் பால்", "size": "200 ml", "price": 20, "img": "11_Badam_Milk_200ml.jpg"}, {"en": "Rose Milk", "ta": "ரோஸ் மில்க்", "size": "200 ml", "price": 20, "img": "12_Rose_Milk_200ml.jpg"}, {"en": "Pepsi Stick Ice", "ta": "பெப்சி ஸ்டிக் ஐஸ்", "size": "", "price": 15, "img": "13_Pepsi_Stick_Ice.jpg"}];
+let cart={};
+
+function productLabel(p){return p[lang==="en"?"en":"ta"]+(p.size?" - "+p.size:"")}
+function renderProducts(){
+document.getElementById("productGrid").innerHTML=products.map((p,i)=>{
+let price=p.price==="On Order"?(lang==="ta"?"ஆர்டரின் பேரில்":"On Order"):"₹"+p.price;
+return `<div class="card"><img src="images/${p.img}" alt="${p.en}"><div class="info"><h3>${p[lang==="en"?"en":"ta"]}</h3><div class="size">${p.size||"&nbsp;"}</div><div class="price ${p.price==="On Order"?"order":""}">${price}</div><button class="add-btn" onclick="addProduct(${i})">${lang==="ta"?"➕ ஆர்டரில் சேர்க்கவும்":"➕ ADD TO ORDER"}</button></div></div>`;
+}).join("");
+}
+function addProduct(i){cart[i]=(cart[i]||0)+1;renderCart();document.getElementById("place-order").scrollIntoView({behavior:"smooth"});}
+function changeQty(i,n){cart[i]=(cart[i]||0)+n;if(cart[i]<=0)delete cart[i];renderCart();}
+function renderCart(){
+const keys=Object.keys(cart);
+const c=document.getElementById("cart");
+if(!keys.length){c.innerHTML=`<div class="cart-empty">${lang==="ta"?"இதுவரை எந்த பொருளும் சேர்க்கப்படவில்லை. மேலே உள்ள பொருட்களில் ADD செய்யுங்கள்.":"No products added yet. Go above and click ADD."}</div>`;document.getElementById("total").textContent=lang==="ta"?"மொத்தம்: ₹0":"Total: ₹0";return;}
+let total=0;
+c.innerHTML=keys.map(k=>{let p=products[k],q=cart[k],amt=typeof p.price==="number"?p.price*q:null;if(amt!==null)total+=amt;return `<div class="cart-item"><img src="images/${p.img}"><div class="cart-name">${productLabel(p)}<br><small>${p.price==="On Order"?(lang==="ta"?"விலை: ஆர்டரின் பேரில்":"Price: On Order"):"₹"+p.price+" × "+q+(amt!==null?" = ₹"+amt:"")}</small></div><div class="qty"><button onclick="changeQty(${k},-1)">−</button><b>${q}</b><button onclick="changeQty(${k},1)">+</button></div><button class="remove" onclick="changeQty(${k},-99)">×</button></div>`}).join("");
+document.getElementById("total").textContent=(lang==="ta"?"மொத்தம்: ₹":"Total: ₹")+total+(keys.some(k=>products[k].price==="On Order")?(lang==="ta"?" + ஆர்டர் விலை":" + Order price"):"");
+}
+function setLang(l){lang=l;document.documentElement.lang=l;document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[l]);document.querySelectorAll("[data-ph-en]").forEach(e=>e.placeholder=e.dataset[l==="en"?"phEn":"phTa"]);document.querySelectorAll(".lang button").forEach((b,i)=>b.classList.toggle("active",(l==="en"&&i===0)||(l==="ta"&&i===1)));renderProducts();renderCart();}
+function placeOrder(){
+const keys=Object.keys(cart);if(!keys.length){alert(lang==="ta"?"முதலில் குறைந்தது ஒரு பொருளை சேர்க்கவும்.":"Please add at least one product first.");return;}
+const name=document.getElementById("customerName").value.trim(),mobile=document.getElementById("mobile").value.trim(),address=document.getElementById("address").value.trim(),note=document.getElementById("note").value.trim();
+let total=0,lines=[];
+keys.forEach(k=>{let p=products[k],q=cart[k],label=p.en+(p.size?" "+p.size:"");if(typeof p.price==="number"){let amt=p.price*q;total+=amt;lines.push(`• ${label} - Qty ${q} - ₹${amt}`)}else lines.push(`• ${label} - Qty ${q} - Price: On Order`)});
+let text=`🧊 *RANJITH ICE COMPANY - NEW ORDER*\n\n👤 Name: ${name}\n📞 Mobile: ${mobile}\n📍 Address: ${address||"-"}\n\n🍦 *Products:*\n${lines.join("\n")}\n\n💰 *Total: ₹${total}*${keys.some(k=>products[k].price==="On Order")?" + Strawberry Pista price on order":""}\n📝 Note: ${note||"-"}`;
+window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(text),"_blank");
+}
+function openWA(){window.open("https://wa.me/"+phone,"_blank")}
+renderProducts();renderCart();
+</script>
+</body></html>
