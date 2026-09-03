@@ -61,9 +61,20 @@ header{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
     font-size:23px;
     font-weight:800;
     white-space:nowrap;
+}
+.logo img{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+    border-radius:10px;
+    background:#fff;
+    padding:3px;
 }
 
 .nav{
@@ -442,8 +453,13 @@ footer{
 
     .logo{
         width:100%;
+        justify-content:center;
         text-align:center;
         font-size:22px;
+    }
+    .logo img{
+        width:52px;
+        height:52px;
     }
 
     .nav{
@@ -543,6 +559,10 @@ footer{
     .logo{
         font-size:20px;
     }
+    .logo img{
+        width:46px;
+        height:46px;
+    }
 
     .nav{
         gap:8px 12px;
@@ -579,7 +599,7 @@ footer{
 
 <header>
 
-    <div class="logo">🧊 Ranjith Ice Company</div>
+    <div class="logo"><img src="images/logo.png" alt="Ranjith Ice Company Logo"> <span>Ranjith Ice Company</span></div>
 
     <div class="nav">
         <a href="#home" data-en="Home" data-ta="முகப்பு">Home</a>
@@ -595,24 +615,17 @@ footer{
 
 </header>
 
-
 <section class="hero" id="home">
 
     <div>
 
         <h1>🍦 Ranjith Ice Company - Ice Cream in Cuddalore</h1>
 
-        <p
-        data-en="Ice Cream & Frozen Products in B. Adhanur, Sethiyathope, Cuddalore, Tamil Nadu"
-        data-ta="பி. ஆதனூர், சேத்தியாத்தோப்பு, கடலூர், தமிழ்நாட்டில் ஐஸ்கிரீம் மற்றும் உறைந்த உணவுப் பொருட்கள்">
+        <p data-en="Ice Cream & Frozen Products in B. Adhanur, Sethiyathope, Cuddalore, Tamil Nadu" data-ta="பி. ஆதனூர், சேத்தியாத்தோப்பு, கடலூர், தமிழ்நாட்டில் ஐஸ்கிரீம் மற்றும் உறைந்த உணவுப் பொருட்கள்">
         Ice Cream & Frozen Products in B. Adhanur, Sethiyathope, Cuddalore, Tamil Nadu
         </p>
 
-        <a
-        href="#products"
-        class="hero-btn"
-        data-en="🍦 Start Ordering"
-        data-ta="🍦 ஆர்டர் தொடங்குங்கள்">
+        <a href="#products" class="hero-btn" data-en="🍦 Start Ordering" data-ta="🍦 ஆர்டர் தொடங்குங்கள்">
         🍦 Start Ordering
         </a>
 
@@ -622,17 +635,11 @@ footer{
 
 <section class="products" id="products">
 
-    <h2
-    class="title"
-    data-en="🍦 Select Products"
-    data-ta="🍦 பொருட்களை தேர்வு செய்யுங்கள்">
+    <h2 class="title" data-en="🍦 Select Products" data-ta="🍦 பொருட்களை தேர்வு செய்யுங்கள்">
     🍦 Select Products
     </h2>
 
-    <p
-    class="sub"
-    data-en="Click ADD one by one. Your selected products will appear in the order form below."
-    data-ta="ஒவ்வொரு பொருளையும் ADD செய்யுங்கள். தேர்வு செய்த பொருட்கள் கீழே உள்ள ஆர்டர் பட்டியலில் வரும்.">
+    <p class="sub" data-en="Click ADD one by one. Your selected products will appear in the order form below." data-ta="ஒவ்வொரு பொருளையும் ADD செய்யுங்கள். தேர்வு செய்த பொருட்கள் கீழே உள்ள ஆர்டர் பட்டியலில் வரும்.">
     Click ADD one by one. Your selected products will appear in the order form below.
     </p>
 
@@ -640,23 +647,15 @@ footer{
 
 </section>
 
-
 <section class="order-section" id="place-order">
 
-    <h2
-    class="title"
-    data-en="📝 Place Your Order"
-    data-ta="📝 உங்கள் ஆர்டரை பதிவு செய்யுங்கள்">
+    <h2 class="title" data-en="📝 Place Your Order" data-ta="📝 உங்கள் ஆர்டரை பதிவு செய்யுங்கள்">
     📝 Place Your Order
     </h2>
 
-    <p
-    class="sub"
-    data-en="Review products, enter your details and complete payment or send the order by WhatsApp."
-    data-ta="தேர்வு செய்த பொருட்களை சரிபார்த்து, உங்கள் விவரங்களை பதிவு செய்து பணம் செலுத்தலாம் அல்லது WhatsApp மூலம் ஆர்டர் செய்யலாம்.">
+    <p class="sub" data-en="Review products, enter your details and complete payment or send the order by WhatsApp." data-ta="தேர்வு செய்த பொருட்களை சரிபார்த்து, உங்கள் விவரங்களை பதிவு செய்து பணம் செலுத்தலாம் அல்லது WhatsApp மூலம் ஆர்டர் செய்யலாம்.">
     Review products, enter your details and complete payment or send the order by WhatsApp.
     </p>
-
 
     <div class="order-layout">
 
@@ -664,9 +663,7 @@ footer{
 
         <div class="box">
 
-            <h2
-            data-en="🛒 Your Order"
-            data-ta="🛒 உங்கள் ஆர்டர்">
+            <h2 data-en="🛒 Your Order" data-ta="🛒 உங்கள் ஆர்டர்">
             🛒 Your Order
             </h2>
 
@@ -678,86 +675,43 @@ footer{
 
         </div>
 
-
         <!-- CUSTOMER DETAILS -->
 
         <div class="box">
 
-            <h2
-            data-en="👤 Customer Details"
-            data-ta="👤 வாடிக்கையாளர் விவரங்கள்">
+            <h2 data-en="👤 Customer Details" data-ta="👤 வாடிக்கையாளர் விவரங்கள்">
             👤 Customer Details
             </h2>
 
-
             <form onsubmit="placeOrder();return false;">
 
-                <input
-                id="customerName"
-                required
-                placeholder="Your Name"
-                data-ph-en="Your Name"
-                data-ph-ta="உங்கள் பெயர்">
+                <input id="customerName" required placeholder="Your Name" data-ph-en="Your Name" data-ph-ta="உங்கள் பெயர்">
 
-                <input
-                id="mobile"
-                required
-                type="tel"
-                placeholder="Mobile Number"
-                data-ph-en="Mobile Number"
-                data-ph-ta="மொபைல் எண்">
+                <input id="mobile" required type="tel" placeholder="Mobile Number" data-ph-en="Mobile Number" data-ph-ta="மொபைல் எண்">
 
-                <textarea
-                id="address"
-                placeholder="Address / Delivery Location"
-                data-ph-en="Address / Delivery Location"
-                data-ph-ta="முகவரி / டெலிவரி இடம்"></textarea>
+                <textarea id="address" placeholder="Address / Delivery Location" data-ph-en="Address / Delivery Location" data-ph-ta="முகவரி / டெலிவரி இடம்"></textarea>
 
-                <textarea
-                id="note"
-                placeholder="Additional Message (Optional)"
-                data-ph-en="Additional Message (Optional)"
-                data-ph-ta="கூடுதல் தகவல் (விருப்பம்)"></textarea>
-
+                <textarea id="note" placeholder="Additional Message (Optional)" data-ph-en="Additional Message (Optional)" data-ph-ta="கூடுதல் தகவல் (விருப்பம்)"></textarea>
 
                 <!-- GPAY -->
 
-                <button
-                type="button"
-                class="gpay-btn"
-                onclick="payWithUPI()"
-                data-en="💳 Pay Now with GPay / UPI"
-                data-ta="💳 GPay / UPI மூலம் பணம் செலுத்துங்கள்">
+                <button type="button" class="gpay-btn" onclick="payWithUPI()" data-en="💳 Pay Now with GPay / UPI" data-ta="💳 GPay / UPI மூலம் பணம் செலுத்துங்கள்">
                 💳 Pay Now with GPay / UPI
                 </button>
 
-
-                <div
-                class="payment-note"
-                data-en="UPI payment amount will be based on your selected products."
-                data-ta="நீங்கள் தேர்வு செய்த பொருட்களின் மொத்த தொகை UPI-ல் காட்டப்படும்.">
+                <div class="payment-note" data-en="UPI payment amount will be based on your selected products." data-ta="நீங்கள் தேர்வு செய்த பொருட்களின் மொத்த தொகை UPI-ல் காட்டப்படும்.">
                 UPI payment amount will be based on your selected products.
                 </div>
 
-
                 <!-- WHATSAPP -->
 
-                <button
-                id="placeBtn"
-                class="place-btn"
-                type="submit"
-                data-en="💬 Place Order via WhatsApp"
-                data-ta="💬 WhatsApp மூலம் ஆர்டர் செய்யுங்கள்">
+                <button id="placeBtn" class="place-btn" type="submit" data-en="💬 Place Order via WhatsApp" data-ta="💬 WhatsApp மூலம் ஆர்டர் செய்யுங்கள்">
                 💬 Place Order via WhatsApp
                 </button>
 
             </form>
 
-
-            <p
-            class="note"
-            data-en="Add at least one product before payment or placing your order. Strawberry Pista price will be confirmed on order."
-            data-ta="பணம் செலுத்துவதற்கு அல்லது ஆர்டர் செய்வதற்கு முன் குறைந்தது ஒரு பொருளையாவது சேர்க்கவும். Strawberry Pista விலை ஆர்டர் செய்யும்போது உறுதி செய்யப்படும்.">
+            <p class="note" data-en="Add at least one product before payment or placing your order. Strawberry Pista price will be confirmed on order." data-ta="பணம் செலுத்துவதற்கு அல்லது ஆர்டர் செய்வதற்கு முன் குறைந்தது ஒரு பொருளையாவது சேர்க்கவும். Strawberry Pista விலை ஆர்டர் செய்யும்போது உறுதி செய்யப்படும்.">
             Add at least one product before payment or placing your order.
             Strawberry Pista price will be confirmed on order.
             </p>
@@ -768,13 +722,9 @@ footer{
 
 </section>
 
-
 <section class="contact" id="contact">
 
-    <h2
-    class="title"
-    data-en="📞 Contact Us"
-    data-ta="📞 எங்களை தொடர்பு கொள்ளுங்கள்">
+    <h2 class="title" data-en="📞 Contact Us" data-ta="📞 எங்களை தொடர்பு கொள்ளுங்கள்">
     📞 Contact Us
     </h2>
 
@@ -792,18 +742,15 @@ footer{
 
 </section>
 
-
 <footer>
 
     © 2026 Ranjith Ice Company
 
 </footer>
 
-
 <a class="wa" href="javascript:openWA()">
     💬
 </a>
-
 
 <script>
 
@@ -927,647 +874,65 @@ const products = [
 
 let cart = {};
 
-
 /* =========================
    PRODUCT LABEL
 ========================= */
 
-function productLabel(p){
-
-    return p[lang === "en" ? "en" : "ta"] +
-    (p.size ? " - " + p.size : "");
-
-}
-
+function productLabel(p){ return p[lang === "en" ? "en" : "ta"] + (p.size ? " - " + p.size : ""); }
 
 /* =========================
    RENDER PRODUCTS
 ========================= */
 
-function renderProducts(){
-
-    document.getElementById("productGrid").innerHTML =
-    products.map((p,i)=>{
-
-        let price =
-        p.price === "On Order"
-        ?
-        (lang === "ta" ? "ஆர்டரின் பேரில்" : "On Order")
-        :
-        "₹" + p.price;
-
-        return `
-        <div class="card">
-
-            <img
-            src="images/${p.img}"
-            alt="${p.en}">
-
-            <div class="info">
-
-                <h3>
-                    ${p[lang === "en" ? "en" : "ta"]}
-                </h3>
-
-                <div class="size">
-                    ${p.size || "&nbsp;"}
-                </div>
-
-                <div class="price ${p.price === "On Order" ? "order" : ""}">
-                    ${price}
-                </div>
-
-                <button
-                class="add-btn"
-                onclick="addProduct(${i})">
-
-                    ${
-                    lang === "ta"
-                    ?
-                    "➕ ஆர்டரில் சேர்க்கவும்"
-                    :
-                    "➕ ADD TO ORDER"
-                    }
-
-                </button>
-
-            </div>
-
-        </div>
-        `;
-
-    }).join("");
-
-}
-
+function renderProducts(){ document.getElementById("productGrid").innerHTML = products.map((p,i)=>{ let price = p.price === "On Order" ? (lang === "ta" ? "ஆர்டரின் பேரில்" : "On Order") : "₹" + p.price; return ` <div class="card"> <img src="images/${p.img}" alt="${p.en}"> <div class="info"> <h3> ${p[lang === "en" ? "en" : "ta"]} </h3> <div class="size"> ${p.size || "&nbsp;"} </div> <div class="price ${p.price === "On Order" ? "order" : ""}"> ${price} </div> <button class="add-btn" onclick="addProduct(${i})"> ${ lang === "ta" ? "➕ ஆர்டரில் சேர்க்கவும்" : "➕ ADD TO ORDER" } </button> </div> </div> `; }).join(""); }
 
 /* =========================
    ADD PRODUCT
 ========================= */
 
-function addProduct(i){
-
-    cart[i] = (cart[i] || 0) + 1;
-
-    renderCart();
-
-    document
-    .getElementById("place-order")
-    .scrollIntoView({
-        behavior:"smooth"
-    });
-
-}
-
+function addProduct(i){ cart[i] = (cart[i] || 0) + 1; renderCart(); document .getElementById("place-order") .scrollIntoView({ behavior:"smooth" }); }
 
 /* =========================
    CHANGE QUANTITY
 ========================= */
 
-function changeQty(i,n){
-
-    cart[i] = (cart[i] || 0) + n;
-
-    if(cart[i] <= 0){
-
-        delete cart[i];
-
-    }
-
-    renderCart();
-
-}
-
+function changeQty(i,n){ cart[i] = (cart[i] || 0) + n; if(cart[i] <= 0){ delete cart[i]; } renderCart(); }
 
 /* =========================
    CALCULATE TOTAL
 ========================= */
 
-function getCartTotal(){
-
-    let total = 0;
-
-    Object.keys(cart).forEach(k=>{
-
-        const p = products[k];
-
-        if(typeof p.price === "number"){
-
-            total += p.price * cart[k];
-
-        }
-
-    });
-
-    return total;
-
-}
-
+function getCartTotal(){ let total = 0; Object.keys(cart).forEach(k=>{ const p = products[k]; if(typeof p.price === "number"){ total += p.price * cart[k]; } }); return total; }
 
 /* =========================
    RENDER CART
 ========================= */
 
-function renderCart(){
-
-    const keys = Object.keys(cart);
-
-    const c = document.getElementById("cart");
-
-    if(!keys.length){
-
-        c.innerHTML = `
-        <div class="cart-empty">
-
-        ${
-        lang === "ta"
-        ?
-        "இதுவரை எந்த பொருளும் சேர்க்கப்படவில்லை. மேலே உள்ள பொருட்களில் ADD செய்யுங்கள்."
-        :
-        "No products added yet. Go above and click ADD."
-        }
-
-        </div>
-        `;
-
-        document
-        .getElementById("total")
-        .textContent =
-        lang === "ta"
-        ?
-        "மொத்தம்: ₹0"
-        :
-        "Total: ₹0";
-
-        return;
-
-    }
-
-    let total = 0;
-
-    c.innerHTML =
-    keys.map(k=>{
-
-        let p = products[k];
-
-        let q = cart[k];
-
-        let amt =
-        typeof p.price === "number"
-        ?
-        p.price * q
-        :
-        null;
-
-        if(amt !== null){
-
-            total += amt;
-
-        }
-
-        return `
-
-        <div class="cart-item">
-
-            <img src="images/${p.img}">
-
-            <div class="cart-name">
-
-                ${productLabel(p)}
-
-                <br>
-
-                <small>
-
-                ${
-                p.price === "On Order"
-                ?
-                (
-                    lang === "ta"
-                    ?
-                    "விலை: ஆர்டரின் பேரில்"
-                    :
-                    "Price: On Order"
-                )
-                :
-                "₹" + p.price +
-                " × " + q +
-                " = ₹" + amt
-                }
-
-                </small>
-
-            </div>
-
-
-            <div class="qty">
-
-                <button onclick="changeQty(${k},-1)">
-                    −
-                </button>
-
-                <b>${q}</b>
-
-                <button onclick="changeQty(${k},1)">
-                    +
-                </button>
-
-            </div>
-
-
-            <button
-            class="remove"
-            onclick="changeQty(${k},-99)">
-
-                ×
-
-            </button>
-
-        </div>
-
-        `;
-
-    }).join("");
-
-
-    document
-    .getElementById("total")
-    .textContent =
-
-    (lang === "ta" ? "மொத்தம்: ₹" : "Total: ₹")
-
-    + total
-
-    +
-
-    (
-        keys.some(
-            k => products[k].price === "On Order"
-        )
-
-        ?
-
-        (
-            lang === "ta"
-            ?
-            " + ஆர்டர் விலை"
-            :
-            " + Order price"
-        )
-
-        :
-
-        ""
-    );
-
-}
-
+function renderCart(){ const keys = Object.keys(cart); const c = document.getElementById("cart"); if(!keys.length){ c.innerHTML = ` <div class="cart-empty"> ${ lang === "ta" ? "இதுவரை எந்த பொருளும் சேர்க்கப்படவில்லை. மேலே உள்ள பொருட்களில் ADD செய்யுங்கள்." : "No products added yet. Go above and click ADD." } </div> `; document .getElementById("total") .textContent = lang === "ta" ? "மொத்தம்: ₹0" : "Total: ₹0"; return; } let total = 0; c.innerHTML = keys.map(k=>{ let p = products[k]; let q = cart[k]; let amt = typeof p.price === "number" ? p.price * q : null; if(amt !== null){ total += amt; } return ` <div class="cart-item"> <img src="images/${p.img}"> <div class="cart-name"> ${productLabel(p)} <br> <small> ${ p.price === "On Order" ? ( lang === "ta" ? "விலை: ஆர்டரின் பேரில்" : "Price: On Order" ) : "₹" + p.price + " × " + q + " = ₹" + amt } </small> </div> <div class="qty"> <button onclick="changeQty(${k},-1)"> − </button> <b>${q}</b> <button onclick="changeQty(${k},1)"> + </button> </div> <button class="remove" onclick="changeQty(${k},-99)"> × </button> </div> `; }).join(""); document .getElementById("total") .textContent = (lang === "ta" ? "மொத்தம்: ₹" : "Total: ₹") + total + ( keys.some( k => products[k].price === "On Order" ) ? ( lang === "ta" ? " + ஆர்டர் விலை" : " + Order price" ) : "" ); }
 
 /* =========================
    LANGUAGE
 ========================= */
 
-function setLang(l){
-
-    lang = l;
-
-    document.documentElement.lang = l;
-
-
-    document
-    .querySelectorAll("[data-en]")
-    .forEach(e=>{
-
-        e.textContent = e.dataset[l];
-
-    });
-
-
-    document
-    .querySelectorAll("[data-ph-en]")
-    .forEach(e=>{
-
-        e.placeholder =
-        e.dataset[
-            l === "en"
-            ?
-            "phEn"
-            :
-            "phTa"
-        ];
-
-    });
-
-
-    document
-    .querySelectorAll(".lang button")
-    .forEach((b,i)=>{
-
-        b.classList.toggle(
-
-            "active",
-
-            (l === "en" && i === 0) ||
-            (l === "ta" && i === 1)
-
-        );
-
-    });
-
-
-    renderProducts();
-
-    renderCart();
-
-}
-
+function setLang(l){ lang = l; document.documentElement.lang = l; document .querySelectorAll("[data-en]") .forEach(e=>{ e.textContent = e.dataset[l]; }); document .querySelectorAll("[data-ph-en]") .forEach(e=>{ e.placeholder = e.dataset[ l === "en" ? "phEn" : "phTa" ]; }); document .querySelectorAll(".lang button") .forEach((b,i)=>{ b.classList.toggle( "active", (l === "en" && i === 0) || (l === "ta" && i === 1) ); }); renderProducts(); renderCart(); }
 
 /* =========================
    GPAY / UPI PAYMENT
 ========================= */
 
-function payWithUPI(){
-
-    const keys = Object.keys(cart);
-
-    if(!keys.length){
-
-        alert(
-
-            lang === "ta"
-
-            ?
-            "முதலில் குறைந்தது ஒரு பொருளை சேர்க்கவும்."
-
-            :
-            "Please add at least one product first."
-
-        );
-
-        return;
-
-    }
-
-
-    const hasOnOrderProduct =
-    keys.some(
-        k => products[k].price === "On Order"
-    );
-
-
-    if(hasOnOrderProduct){
-
-        alert(
-
-            lang === "ta"
-
-            ?
-            "Strawberry Pista விலை இன்னும் நிர்ணயிக்கப்படவில்லை. முதலில் WhatsApp மூலம் விலையை உறுதி செய்யுங்கள்."
-
-            :
-            "Strawberry Pista price is on order. Please confirm the price through WhatsApp before payment."
-
-        );
-
-        return;
-
-    }
-
-
-    const amount = getCartTotal();
-
-
-    if(amount <= 0){
-
-        alert(
-
-            lang === "ta"
-
-            ?
-            "செலுத்த வேண்டிய தொகை இல்லை."
-
-            :
-            "No amount available for payment."
-
-        );
-
-        return;
-
-    }
-
-
-    const upiLink =
-
-        "upi://pay"
-
-        + "?pa=" + encodeURIComponent(upiId)
-
-        + "&pn=" + encodeURIComponent(merchantName)
-
-        + "&am=" + encodeURIComponent(amount)
-
-        + "&cu=INR";
-
-
-    window.location.href = upiLink;
-
-}
-
+function payWithUPI(){ const keys = Object.keys(cart); if(!keys.length){ alert( lang === "ta" ? "முதலில் குறைந்தது ஒரு பொருளை சேர்க்கவும்." : "Please add at least one product first." ); return; } const hasOnOrderProduct = keys.some( k => products[k].price === "On Order" ); if(hasOnOrderProduct){ alert( lang === "ta" ? "Strawberry Pista விலை இன்னும் நிர்ணயிக்கப்படவில்லை. முதலில் WhatsApp மூலம் விலையை உறுதி செய்யுங்கள்." : "Strawberry Pista price is on order. Please confirm the price through WhatsApp before payment." ); return; } const amount = getCartTotal(); if(amount <= 0){ alert( lang === "ta" ? "செலுத்த வேண்டிய தொகை இல்லை." : "No amount available for payment." ); return; } const upiLink = "upi://pay" + "?pa=" + encodeURIComponent(upiId) + "&pn=" + encodeURIComponent(merchantName) + "&am=" + encodeURIComponent(amount) + "&cu=INR"; window.location.href = upiLink; }
 
 /* =========================
    WHATSAPP ORDER
 ========================= */
 
-function placeOrder(){
-
-    const keys = Object.keys(cart);
-
-
-    if(!keys.length){
-
-        alert(
-
-            lang === "ta"
-
-            ?
-            "முதலில் குறைந்தது ஒரு பொருளை சேர்க்கவும்."
-
-            :
-            "Please add at least one product first."
-
-        );
-
-        return;
-
-    }
-
-
-    const name =
-    document
-    .getElementById("customerName")
-    .value
-    .trim();
-
-
-    const mobile =
-    document
-    .getElementById("mobile")
-    .value
-    .trim();
-
-
-    const address =
-    document
-    .getElementById("address")
-    .value
-    .trim();
-
-
-    const note =
-    document
-    .getElementById("note")
-    .value
-    .trim();
-
-
-    let total = 0;
-
-    let lines = [];
-
-
-    keys.forEach(k=>{
-
-        let p = products[k];
-
-        let q = cart[k];
-
-        let label =
-        p.en +
-        (
-            p.size
-            ?
-            " " + p.size
-            :
-            ""
-        );
-
-
-        if(typeof p.price === "number"){
-
-            let amt = p.price * q;
-
-            total += amt;
-
-
-            lines.push(
-
-                "• " +
-                label +
-                " - Qty " +
-                q +
-                " - ₹" +
-                amt
-
-            );
-
-        }
-
-        else{
-
-            lines.push(
-
-                "• " +
-                label +
-                " - Qty " +
-                q +
-                " - Price: On Order"
-
-            );
-
-        }
-
-    });
-
-
-    let text =
-
-    "🧊 *RANJITH ICE COMPANY - NEW ORDER*"
-
-    + "\n\n"
-
-    + "👤 Name: " + name
-
-    + "\n"
-
-    + "📞 Mobile: " + mobile
-
-    + "\n"
-
-    + "📍 Address: " + (address || "-")
-
-    + "\n\n"
-
-    + "🍦 *Products:*"
-
-    + "\n"
-
-    + lines.join("\n")
-
-    + "\n\n"
-
-    + "💰 *Total: ₹" + total + "*"
-
-    +
-
-    (
-        keys.some(
-            k => products[k].price === "On Order"
-        )
-
-        ?
-
-        " + Strawberry Pista price on order"
-
-        :
-
-        ""
-    )
-
-    + "\n"
-
-    + "📝 Note: " + (note || "-");
-
-
-    window.open(
-
-        "https://wa.me/" +
-        phone +
-        "?text=" +
-        encodeURIComponent(text),
-
-        "_blank"
-
-    );
-
-}
-
+function placeOrder(){ const keys = Object.keys(cart); if(!keys.length){ alert( lang === "ta" ? "முதலில் குறைந்தது ஒரு பொருளை சேர்க்கவும்." : "Please add at least one product first." ); return; } const name = document .getElementById("customerName") .value .trim(); const mobile = document .getElementById("mobile") .value .trim(); const address = document .getElementById("address") .value .trim(); const note = document .getElementById("note") .value .trim(); let total = 0; let lines = []; keys.forEach(k=>{ let p = products[k]; let q = cart[k]; let label = p.en + ( p.size ? " " + p.size : "" ); if(typeof p.price === "number"){ let amt = p.price * q; total += amt; lines.push( "• " + label + " - Qty " + q + " - ₹" + amt ); } else{ lines.push( "• " + label + " - Qty " + q + " - Price: On Order" ); } }); let text = "🧊 *RANJITH ICE COMPANY - NEW ORDER*" + "\n\n" + "👤 Name: " + name + "\n" + "📞 Mobile: " + mobile + "\n" + "📍 Address: " + (address || "-") + "\n\n" + "🍦 *Products:*" + "\n" + lines.join("\n") + "\n\n" + "💰 *Total: ₹" + total + "*" + ( keys.some( k => products[k].price === "On Order" ) ? " + Strawberry Pista price on order" : "" ) + "\n" + "📝 Note: " + (note || "-"); window.open( "https://wa.me/" + phone + "?text=" + encodeURIComponent(text), "_blank" ); }
 
 /* =========================
    FLOATING WHATSAPP
 ========================= */
 
-function openWA(){
-
-    window.open(
-
-        "https://wa.me/" + phone,
-
-        "_blank"
-
-    );
-
-}
-
+function openWA(){ window.open( "https://wa.me/" + phone, "_blank" ); }
 
 /* INITIAL LOAD */
 
